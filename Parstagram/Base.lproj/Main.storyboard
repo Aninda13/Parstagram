@@ -109,13 +109,13 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ananda" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cut-u3-2tm">
-                                                    <rect key="frame" x="8" y="384.5" width="74" height="26.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                    <rect key="frame" x="8" y="384.5" width="79.5" height="26.5"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Caption Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zSq-Ck-RBz">
-                                                    <rect key="frame" x="90" y="384.5" width="316" height="26.5"/>
+                                                    <rect key="frame" x="95.5" y="384.5" width="310.5" height="26.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -140,6 +140,41 @@
                                             <outlet property="captionLabel" destination="zSq-Ck-RBz" id="cqf-ov-dnO"/>
                                             <outlet property="photoView" destination="GF5-I0-nht" id="b3P-sW-QKR"/>
                                             <outlet property="usernameLabel" destination="cut-u3-2tm" id="WIG-7e-YrO"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CommentCell" id="PWk-Tv-r1M" userLabel="CommentCell" customClass="CommentCell" customModule="Parstagram" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="447" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="PWk-Tv-r1M" id="ezD-Ix-S5X">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ananda" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MOf-fA-ufc">
+                                                    <rect key="frame" x="16" y="8" width="79.5" height="27"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a comment" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BOA-AI-c9F">
+                                                    <rect key="frame" x="103.5" y="8" width="172.5" height="26.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="BOA-AI-c9F" secondAttribute="trailing" constant="8" id="2ct-2P-cwt"/>
+                                                <constraint firstItem="BOA-AI-c9F" firstAttribute="leading" secondItem="MOf-fA-ufc" secondAttribute="trailing" constant="8" id="IPY-ii-qvY"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="BOA-AI-c9F" secondAttribute="bottom" constant="8" id="Qtt-ug-3Mv"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="MOf-fA-ufc" secondAttribute="bottom" constant="8" id="Rav-HQ-XYN"/>
+                                                <constraint firstItem="BOA-AI-c9F" firstAttribute="top" secondItem="ezD-Ix-S5X" secondAttribute="top" constant="8" id="SS6-Ai-XoX"/>
+                                                <constraint firstItem="MOf-fA-ufc" firstAttribute="top" secondItem="ezD-Ix-S5X" secondAttribute="top" constant="8" id="w3Z-Ny-fXm"/>
+                                                <constraint firstItem="MOf-fA-ufc" firstAttribute="leading" secondItem="ezD-Ix-S5X" secondAttribute="leading" constant="16" id="xyz-Va-6BB"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="commentLabel" destination="BOA-AI-c9F" id="mTK-Bt-au7"/>
+                                            <outlet property="nameLabel" destination="MOf-fA-ufc" id="Bdn-Gg-LE2"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
